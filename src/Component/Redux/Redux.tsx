@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from './Store';
+import { RootState } from '../Store';
 import { change } from './Content';
 import { Button } from 'antd';
 
@@ -8,14 +8,15 @@ function Redux() {
 
   const dispatch = useDispatch();
 
-  const changeCon = () => {
-    dispatch(change({ val: 'changed!' }));
+  const changeVal = (val) => {
+    dispatch(change({ val: val }));
   };
 
   return (
     <div className='text-center'>
       <h1 className='text-center'>{content}</h1>
-      <Button onClick={changeCon} >Change Content</Button>
+      <Button onClick={() => changeVal('001')} >Change value: 001</Button>
+      <Button onClick={() => changeVal('005')} >Change value: 005</Button>
     </div>
   );
 }

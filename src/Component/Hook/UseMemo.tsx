@@ -24,13 +24,18 @@ function ChildComp({ num }: MyProps) {
 function UseMemo() {
   const [val, setVal] = useState(0);
   const change = () => {
-    setVal(Math.round(Math.random() * 5));
+    setVal(Math.round(Math.random() * 3));
   };
 
   return (
     <div className='text-center'>
       <ChildComp num={val} />
       <Button onClick={change}>Change</Button>
+      <h4>
+        Click change nếu số không đổi <br />
+        và không xuất hiện hộp thoại alert <br />
+        thì useMemo đã không gọi hàm tính toán.
+      </h4>
     </div>
   );
 }

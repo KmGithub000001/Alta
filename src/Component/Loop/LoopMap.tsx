@@ -2,7 +2,7 @@ function LoopMap() {
 
   const arr: [number, string] = [1, 'aaaa'];
   arr.map((e) => {
-    console.log(e);
+    alert(e);
   });
 
 

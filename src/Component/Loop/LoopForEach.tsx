@@ -3,7 +3,7 @@ function LoopForEach() {
   const arr: [number, string] = [1, 'aaaa'];
 
   arr.forEach((e) => {
-    console.log(e);
+    alert(e);
   });
 
   return (<>

@@ -2,7 +2,6 @@ import { useReducer } from 'react';
 import { Button } from 'antd';
 
 function reducer(state, act) {
-  console.log(act);
   switch (act.type) {
     case 'inc':
       return { val: state.val += act.num };
@@ -11,7 +10,6 @@ function reducer(state, act) {
     default:
       alert('erro');
   }
-  console.log(state);
   return { val: state.val };
 }
 

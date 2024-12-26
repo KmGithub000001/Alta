@@ -3,7 +3,7 @@ function LoopForOF() {
   const arr: [number, string] = [1, 'aaaa'];
 
   for ( const val of arr) {
-    console.log(val);
+    alert(val);
   }
 
   return (<>

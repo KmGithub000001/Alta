@@ -3,7 +3,7 @@ function LoopReduce() {
   const arr: [number, string] = [1, 'aaaa'];
 
   arr.reduce((rs, e) => {
-    console.log(e);
+    alert(e);
     return 0;
   }, 0);
 

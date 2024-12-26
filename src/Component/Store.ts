@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import content from './Content';
+import content from './Redux/Content';
+import account from './Firebase/account';
 
 const store = configureStore({
   reducer: {
     content: content,
+    account: account,
   },
 });
 export type RootState = ReturnType<typeof store.getState>;

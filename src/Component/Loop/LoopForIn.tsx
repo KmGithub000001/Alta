@@ -3,7 +3,7 @@ function LoopForIn() {
   const arr: [number, string] = [1, 'aaaa'];
 
   for ( const posi in arr) {
-    console.log(arr[posi]);
+    alert(arr[posi]);
   }
 
   return (<>

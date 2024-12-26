@@ -9,7 +9,7 @@ function FuncObject02() {
     a: 5,
     b: 'test',
     log() {
-      console.log(`a: ${this.a}, b: ${this.b}`);
+      alert(`a: ${this.a}, b: ${this.b}`);
     },
   };
 
